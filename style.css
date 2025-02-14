@@ -1,0 +1,58 @@
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container for Hearts */
+.heart-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Styling Hearts */
+.heart {
+    position: absolute;
+    font-size: 80px; /* Bigger hearts */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.heart:hover {
+    transform: scale(1.2);
+}
+
+/* Message Box */
+#message-box {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show Message Box */
+.show {
+    display: block !important;
+    opacity: 1;
+}
